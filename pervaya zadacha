@@ -1,0 +1,25 @@
+my_string = 'Lukianov'
+
+first_char = my_string[0]
+last_char = my_string[-1]
+third_char_from_start = my_string[2]
+third_char_from_end = my_string[-3]
+
+string_lenght = len(my_string)
+
+new_string = 'I want to sleep'
+
+first_eight_chars = new_string[:8]
+four_chars_from_center = new_string[len(new_string)//2-2:len(new_string)//2+2]
+chars_multiple_of_three = new_string[::3]
+
+print(my_string)
+print(first_char)
+print(last_char)
+print(third_char_from_start)
+print(third_char_from_end)
+print(string_lenght)
+print(new_string)
+print(first_eight_chars)
+print(four_chars_from_center)
+print(chars_multiple_of_three)
