@@ -1,0 +1,93 @@
+1
+adept= {
+    'свинина':213, 
+    'говядина':90, 
+    'баранина':100, 
+    'птица':150
+}
+print(adept)
+print(adept['свинина'])
+adept['птица']=250
+adept['баранина']=120
+adept['говядина']= 111
+print(adept)
+adept['рыба']=55
+adept['морепродукты']=60
+print(adept)
+adept['баранина']=[]
+print(adept)
+print(adept.keys())
+print(adept.values())
+
+
+
+2
+adept= {
+    'свинина':213, 
+    'говядина':90, 
+    'баранина':100, 
+    'птица':150
+}
+print(adept)
+new_add= "свинина"
+if new_add == "свинина" and adept['свинина'] > 200:
+    adept['свинина']+=1
+    print(adept)
+    print("Продукт в наличии")
+else:
+    print('Закончено пополнение склада %4s'%new_add)
+
+
+3
+adept= {
+    'свинина':200, 
+    'говядина':90, 
+    'баранина':100, 
+    'птица':150
+}
+new_add= "свинина"
+print(adept)
+if new_add == "свинина" and adept['свинина'] > 200:
+    adept['свинина']+=1
+    print(adept)
+    print("свинина в наличии")
+elif new_add == "свинина" and adept['свинина'] <= 200:
+    print('пополнение завершено')
+
+
+4
+adept= {
+    'свинина':200, 
+    'говядина':90, 
+    'баранина':100, 
+    'птица':150
+}
+print(adept)
+adept['рыба']=[]
+print(adept)
+adept_ryba=adept['рыба']
+new_add=50
+new_i=0
+while new_i <= new_add:
+    new_i += 1
+    adept_ryba.append(new_i)
+    print(adept_ryba)
+print("запас пополнен")
+print(adept)
+
+
+
+33
+adept={'свинина':213,'говядина':90,'баранина':100,'птица':150}
+print(adept)
+#group=str(input('В какую категорию пополнение: '))
+#group_count=adept[group]
+group_count=adept['свинина']
+limit=200
+if group_count<limit:
+    print('продолжается пополнение')
+  
+   # adept[group]+=1
+   # print(adept)
+elif group_count>=limit:
+    print('пополнение завершено')
