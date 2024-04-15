@@ -55,26 +55,6 @@ elif new_add == "свинина" and adept['свинина'] <= 200:
     print('пополнение завершено')
 
 
-4
-adept= {
-    'свинина':200, 
-    'говядина':90, 
-    'баранина':100, 
-    'птица':150
-}
-print(adept)
-adept['рыба']=[]
-print(adept)
-adept_ryba=adept['рыба']
-new_add=50
-new_i=0
-while new_i <= new_add:
-    new_i += 1
-    adept_ryba.append(new_i)
-    print(adept_ryba)
-print("запас пополнен")
-print(adept)
-
 
 
 33
