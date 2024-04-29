@@ -71,3 +71,52 @@ if group_count<limit:
    # print(adept)
 elif group_count>=limit:
     print('пополнение завершено')
+
+5
+adept= {
+     "свинина":213, 
+     "говядина":90, 
+     "баранина":100, 
+     "птица":150
+}
+print(adept)
+print(adept["свинина"])
+adept["птица"]=250
+adept["баранина"]=120
+adept["говядина"]= 111
+print(adept)
+adept["птица"]=0
+name="птица"
+i=adept[name]
+print (i)
+if i <= 150:
+    recomendation = 160-i
+    print("нужно пополнить склад", name, "на", recomendation)
+elif i > 150:
+    recomendation = i-150
+    print("запасы", name, "превышают минимальное количество на", recomendation)
+elif i == 0:
+    print("нет")  
+    
+6
+adept= {
+     "свинина":213, 
+     "говядина":90, 
+     "баранина":100, 
+     "птица":150
+}
+print(adept)
+print(adept["свинина"])
+adept["птица"]=250
+adept["баранина"]=120
+adept["говядина"]= 111
+klych=list(adept.keys())
+print (klych)
+for t in klych:
+    i = int(adept[t])
+    if i <= 150:
+        recomendation = 160-i
+        print("нужно пополнить склад", t, "на", recomendation)
+    elif i > 150:
+        recomendation = i-150
+        print("запасы", t, "превышают минимальное количество на", recomendation)
