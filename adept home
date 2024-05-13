@@ -120,3 +120,27 @@ for t in klych:
     elif i > 150:
         recomendation = i-150
         print("запасы", t, "превышают минимальное количество на", recomendation)
+
+
+7
+adept= {
+     "свинина":213, 
+     "говядина":90, 
+     "баранина":100, 
+     "птица":150
+}
+print(adept)
+def uchet():
+    n=input("Ввод категории:")
+    n=str(n)
+    tovar=input("Введите доп пополнение на склад:")
+    tovar=int(tovar)
+    return n,tovar
+n1,tovar1=uchet()
+print(n1)
+print(tovar1)
+def prov(group,tip):
+ if adept[group]+tip < 300:
+    adept[group]=adept[group]+tip
+    print(adept)   
+    print("Доставлено %4i" %tip)
